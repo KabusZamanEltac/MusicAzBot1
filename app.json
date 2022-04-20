@@ -7,8 +7,8 @@
         "Music",
         "Bot"
     ],
-    "repository": "https://github.com/ByFragment/DemonMusic-Demo-",
-    "success_url": "https://github.com/ByFragment/DemonMusic-Demo-",
+    "repository": "https://github.com/Hesenovhuseyn/MusicAzBot1",
+    "success_url": "https://github.com/Hesenovhuseyn/MusicAzBot1",
     "image": "heroku/python",
     "formation": {
         "worker": {
