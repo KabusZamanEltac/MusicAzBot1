@@ -33,6 +33,8 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
+              
+                   InlineKeyboardButton('Məni Qrupa Əlavə Et ✅', , f'https://t.me/{USERNAME}?startgroup=a'),
                     InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Fidowunkanali'),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
