@@ -1,7 +1,7 @@
 #Buralara əl dəymə...
 #Deploy butonuna bas deploy elə.
-#Rəsmi Kanal t.me/Botsinator 
-
+#Rəsmi Kanal t.me/ASOresmi
+.
 import os, youtube_dl, requests, time
 from config import Config
 from youtube_search import YoutubeSearch
@@ -34,11 +34,10 @@ def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [[
               
-                   InlineKeyboardButton('Məni Qrupa Əlavə Et ✅', , f'https://t.me/{USERNAME}?startgroup=a'),
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Fidowunkanali'),
+                   InlineKeyboardButton ( 'Məni Qrupa Əlavə Et ✅' , , f'https://t.me/ { @Dennizz_bot } ?startgroup=a' ),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
-                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
+                    InlineKeyboardButton ( 'Sahibi 👨🏻‍💻' , url  =  f'T.me/ { ismiyev95 } ' )
                 ]
             ]
         )
@@ -54,10 +53,10 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Fidowunkanali'),
-                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
-                  ],[
-                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
+                    InlineKeyboardButton ( 'ASO Rəsmi✅' , url        =       'https://t.me/ASOresmi
+                    InlineKeyboardButton ( 'Playlist 🎵' , url       =       f'https://t.me/ { Konfiqurasiya . WerabliAnlar } ' ) t .
+                  ] m,[
+                    InlineKeyboardButton ( 'Sahib 👨🏻‍💻' , url = f'T.me/ { Konfiqurasiya . ismiyev95 } ' )
                 ]
             ]
         )
@@ -113,14 +112,14 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"🎵 Yüklədi [Music Bot](https://t.me/{Config.BOT_USERNAME})"
+        rep  =  f"🎵 Yüklədi [Musiqi Botu](https://t.me/ { Config . Dennizz_bot } )"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@FidowMusicBot")
+        mesaj . cavab_audio ( audio_fayl , başlıq = rep , parse_mode = 'md' , sitat = Yanlış , başlıq = başlıq , müddət = dur , baş barmaq = baş barmaq_adı , ifaçı = "@Dennizz_bot" )
         m.delete()
-        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@FidowMusicBot", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
+        bot . send_audio ( chat_id   =   Konfiqurasiya . PLAYLIST_ID , audio   =   audio_ayl , başlıq = rep , ifaçi  = "@Dennizz_bot" , parse_mode = ' md' , başlıq = başlıq , davamlı = dur , baş barmaq = baş barmaq_adı )                           
     except Exception as e:
         m.edit('**⚠️ Gözlənilməyən xəta yarandı.**\n**Xahiş edirəm xətanı sahibimə xəbərdar et!**')
         print(e)
